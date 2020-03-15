@@ -1,7 +1,7 @@
 ## cGANs: xray housekeeping
 ### Exploring where differences come from.  
 
-In this presentation, I thank Jason Brownlee for his work and tutorials at https://machinelearningmastery.com (citations below in project) and Wojciech Łabuński for his excellent application of image resizing and histogram equilization at https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation.  Data collected from: https://data.mendeley.com/datasets/rscbjbr9sj/2 License: CC BY 4.0 Citation: http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
+It's one thing for a neural net to distinguish between x-rays of healthy children versus those with pneumonia, it's another to be able to identity what the differences are that the neural net depends on.  Are the differences the same as what an expert would consider or are the differences artifacts.  In this presentation, I thank Jason Brownlee for his work and tutorials at https://machinelearningmastery.com (citations below in project) and Wojciech Łabuński for his excellent application of image resizing and histogram equilization at https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation.  Data collected from: https://data.mendeley.com/datasets/rscbjbr9sj/2 License: CC BY 4.0 Citation: http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
 <p align="center">
 <img src="/images/WildFoxSideView.png" width="550" height="270">
 </p>  
