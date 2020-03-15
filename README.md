@@ -9,7 +9,7 @@ In this presentation, I thank Jason Brownlee for his brilliant work and tutorial
 ### Motivation for housekeeping with xrays of children with pneumonia:
 Having resolved for myself issues related to mode collapse and unscheduled interruptions of long running programs,it seemed like a reasonable point to take the show "on the road" and see if it worked outside of creating generators for faces.  Of particular interest is classification of disease based on x-rays.  While considerable effort has been applied to creating discriminators between healthy and morbid patients based on x-rays, an avenue which hasn't been explored as much is identifying where these differences exist.  In some cases, the discriminator is run, 90% accuracy is achieved, but no test tells the observer what the differences actually are and whether or not the observed difference is partly an artifact.  
 
-As can be seen from the screen shot below, not only did the ??? program do a good job of generating images of faces but it also provided proof in a visual comparison of the "male" row and the "female high cheek" row.  
+As can be seen from the screen shot below, not only did the https://github.com/tvtaerum/cGANs_housekeeping program do a good job of generating images of faces but it also provided proof in a visual comparison of the "male" row and the "female high cheek" row.  
 <p align="center">
 <img src="/images/attractiveFaces.png" width="650" height="135">
 </p>
