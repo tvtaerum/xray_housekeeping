@@ -1,7 +1,7 @@
 ## cGANs: xray housekeeping
 ### Exploring where differences come from.  
 
-In this presentation, I thank Jason Brownlee for his brilliant work and tutorials at https://machinelearningmastery.com (citations below in project) and Wojciech Łabuński for his excellent application of image resizing and histogram equilization at https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation.   
+In this presentation, I thank Jason Brownlee for his work and tutorials at https://machinelearningmastery.com (citations below in project) and Wojciech Łabuński for his excellent application of image resizing and histogram equilization at https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation.  Data collected Data: https://data.mendeley.com/datasets/rscbjbr9sj/2 License: CC BY 4.0 Citation: http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
 <p align="center">
 <img src="/images/WildFoxSideView.png" width="550" height="270">
 </p>  
