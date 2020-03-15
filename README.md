@@ -1,13 +1,15 @@
-## cGANs: embedding in images - housekeeping
-### Housekeeping python code for training and utilizing cGans with embedding.  
+## cGANs: xray housekeeping
+### Exploring where differences come from.  
 
-In particular I thank Jason Brownlee for his brilliant work and tutorials at https://machinelearningmastery.com (citations below in project), Iván de Paz Centeno for his work on face detection at https://github.com/ipazc/mtcnn, and  Jeff Heaton for his insights on embedding at https://www.youtube.com/user/HeatonResearch.  It took me more than a year digging into GANs on the Internet to find programmers and instructors whose code work was complete and ran 'out of the box' (except for system related issues) and they also do a wonderful job of explaining why their streams work.  Jason Brownlee and Jeff Heaton are not the only instructors I found who are very impressive but they are the source of insights for this presentation. The description which follows can be considered a branch/fork of Jason Brownlee's tutorial on "vector arithmetic with faces".  
+In this presentation, I thank Jason Brownlee for his brilliant work and tutorials at https://machinelearningmastery.com (citations below in project) and Wojciech Łabuński for his excellent application of image resizing and histogram equilization at https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation.   
 <p align="center">
 <img src="/images/CliffDwellerHuts.png" width="650" height="270">
 </p>  
 
-### Motivation for housekeeping:
-Major issues with cGANs include mode collapse and unscheduled interruptions of long running programs.  Even the best GAN program can leave a person scratching their head wondering why their "minor" changes resulted in various forms of mode collapse.  In particular, the user might discover there are no obvious solutions to bad initial randomized values, no obvious way to start a stream from where it left off, no apparent explanation for generated images which are fuzzy and obscure, warning messages that cannot be turned off, and no obvious ways to vectorize generated images when embedding is employed.   
+### Motivation for housekeeping with xrays of children with pneumonia:
+Having resolved for myself issues related to mode collapse and unscheduled interruptions of long running programs,it seemed like a reasonable point to take the show "on the road" and see if it worked outside of creating generators for faces.  Of particular interest is classification of disease based on x-rays.  While considerable effort has been applied to creating discriminators between healthy and morbid patients based on x-rays, an avenue which hasn't been explored as much is identifying where these differences exist.  In some cases, the discriminator is run, 90% accuracy is achieved, but no test tells the observer what the differences actually are and whether or not the observed difference is partly an artifact.  
+
+As can be seen from the screen shot below, not only did the ??? program do a good job of generating images of faces but it also provided proof in a visual comparison of the "male" row and the "female high cheek" row.  
 <p align="center">
 <img src="/images/attractiveFaces.png" width="650" height="135">
 </p>
