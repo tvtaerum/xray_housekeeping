@@ -3,7 +3,7 @@
 
 In this presentation, I thank Jason Brownlee for his brilliant work and tutorials at https://machinelearningmastery.com (citations below in project) and Wojciech Łabuński for his excellent application of image resizing and histogram equilization at https://www.kaggle.com/wojciech1103/x-ray-classification-and-visualisation.   
 <p align="center">
-<img src="/images/WildFoxSideView.png" width="600" height="270">
+<img src="/images/WildFoxSideView.png" width="550" height="270">
 </p>  
 
 ### Motivation for housekeeping with xrays of children with pneumonia:
