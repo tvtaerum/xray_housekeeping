@@ -18,8 +18,6 @@ As a reminder of what was previously established, we can see in the faces genera
 In particular, we are visually aware that cGAN successfully generated images which are clearly "attractive male" and "attractive female with high cheek bones" but can the cGAN generate images which make apparent the differences between "healthy lungs", "viral pneumonia" and "bacterial pneumonia".  
 </p>
 
-In the face of so many constraints and the ease with which cGANs slide into mode collapse, it can be particularly difficult for the novice (like myself) to make tutorial material work.  While good tutorials make coding as bare bones as possible and adhere as closely as possible to industrial standards so that it's easy to explain and understand the concepts being taught, the code delivered here goes in a different direction.  The Python programs included here invest a greater amount of coding in housekeeping so that the novice, after they've made the essential changes required by their limited environment, will have a better chance of replicating the work done by those who are expert in the field.      
-
 ### Citations:
 <dl>
 <dt> Jason Brownlee, How to Develop a Conditional GAN (cGAN) From Scratch,</dt><dd> Available from https://machinelearningmastery.com/how-to-develop-a-conditional-generative-adversarial-network-from-scratch, accessed January 4th, 2020. </dd>
@@ -58,13 +56,12 @@ In the face of so many constraints and the ease with which cGANs slide into mode
   <li>is there an automatic way to recover before "mode collapse"?</li>
   <li>is there a way to restart a cGAN which is interrupted or has not completed convergence?</li>
   <li>are there different kinds of random initialization values that can be useful?</li>
-  <li>how important is the source material (original images of faces)?</li>
-  <li>how can I use embedding when I have descriptions of images?</li>
-  <li>how can I vectorize from generated face to generated face when using embedding?</li>
+  <li>how important is the source material (original xray images)?</li>
+  <li>how can I use embedding when I have descriptions of xrays?</li>
+  <li>how can I vectorize from generated face to generated xray when using embedding?</li>
   <li>what other adjustments might be applied?</li>
 <ol type="a">
-	<li>selecting only faces with certain features (e.g. attractiveness)</li>
-        <li>adjusting for memory requirements</li>
+	<li>selecting all xrays available</li>
         <li>changing optimization from Adam to Adamax for embedding</li>
         <li>shutting off Tensorflow warning messages</li>
         <li>stamping labels on images</li>
