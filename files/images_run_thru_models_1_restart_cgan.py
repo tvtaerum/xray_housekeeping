@@ -12,6 +12,7 @@ from numpy.random import shuffle
 from tensorflow.keras.models import load_model
 from matplotlib import pyplot as plt
 import numpy as np
+import re
 
 import tensorflow as tf
 from tensorflow import get_logger as log
@@ -69,12 +70,10 @@ def plot_generated(win_title, examples, labels, n, n_samples, n_classes):
     plt.show()
 
 directory = 'xray/results/'
-iFile = 0
+lstEpochs = [5,25,45,65,85,105,125,145,165,185,205,225,245,265,285,305,325,345,365,385,405]
 for idx, filename in enumerate(listdir(directory)):
     if ".h5" in filename and not("_gan" in filename) and not("_dis" in filename):
-        iFile += 1
-        lstEpochs = [5,15,25,35,45,55,65,75,85,95,105,115,125,135,145,155,165,175,185,195,200]
-        lstEpochs = [5,25,45,65,85,105,125,145,165,185,205,225,245,265,285,305,325,345,365,385,405]
+        iFile = int(re.findall(r'\d+',filename)[0])
         if iFile in lstEpochs: 
             model = load_model(directory + filename)
             gen_weights = array(model.get_weights())
