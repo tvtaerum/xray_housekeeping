@@ -1,5 +1,5 @@
 ## cGANs: xray housekeeping
-### Exploring where differences come from.  
+### Applying cGAN embeddings to x-rays  
 
 It's one thing for a neural net to distinguish between healthy children and those with pneumonia, it's another to be able to visually identity what the differences are that the neural net depended on.  Are the differences the same as what an expert would consider or are the differences partly based on artifacts.  As we observed in https://github.com/tvtaerum/cGANs_housekeeping, we are able to generate images which are based on the same weights modified only by an embedding ("attractive male" vs "attractive female with high cheeks bones").  What happens when we apply the same processes to xray images of healthy children and those with bacterial and viral pneumonia. Are the predictions sufficiently strong that we can visually distinguish between healthy, viral pneumonia, and bacterial pneumonia based on generated images?     
 
@@ -16,6 +16,9 @@ As a reminder of what was previously established, we can see in the faces genera
 <img src="/images/attractiveFaces.png" width="650" height="135">
 </p>
 In particular, we are visually aware that cGAN successfully generated images which are clearly "attractive male" and "attractive female with high cheek bones" but can the cGAN generate images which make apparent the differences between "healthy lungs", "viral pneumonia" and "bacterial pneumonia".  
+
+<p align="center">
+<img src="/images/healthy_viral_bacterial_pneumonia.png" width="650" height="135">
 </p>
 
 ### Citations:
