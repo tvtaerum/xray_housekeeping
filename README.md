@@ -3,7 +3,7 @@
 Having demonstrated that we are able to use cGAN to differentially generate female and male faces on the basis of embedding labels, the question is, can we use cGAN to differentially generate images where the patterns of the disease are evident in x-rays.  Can we use cGAN to see beyond the smoke and identify those aspects of disease which distinguish a healthy lung from a lung with pneumonia?  
 
 <p align="center">
-<img src="/images/Fire.png" width="550" height="270">
+<img src="/images/Fire.png" width="550" height="270"> 
 </p> 
 
 As we observed in https://github.com/tvtaerum/cGANs_housekeeping, we are able to generate images which are based on the same weights modified only by an embedding ("attractive male" vs "attractive female with high cheeks bones").  What happens when we apply the same processes to xray images of healthy lungs and those with bacterial and viral pneumonia.      
