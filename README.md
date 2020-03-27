@@ -23,7 +23,7 @@ In particular, we are visually aware that cGAN successfully generated images whi
 <p align="center">
 <img src="/images/healthy_viral_bacterial_pneumonia.png" width="650" height="135">
 </p>    
-In the previous generated x-rays, we can see of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.  
+In the previous screen shot of generated x-rays, we can see of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.  
 
 ### Citations:
 <dl>
