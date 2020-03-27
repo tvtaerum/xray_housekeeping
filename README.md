@@ -1,6 +1,6 @@
 ## cGANs: xray housekeeping
 ### Applying cGAN embeddings to x-rays  
-Having demonstrated that we are able to use cGAN to differentially generate female and male x-rays on the basis of embedding labels, the question is, can we use cGAN to differentially generate images where the patterns of the disease are evident in x-rays.  Can we use cGAN to see beyond the smoke and identify those aspects of disease which distinguish a healthy lung from a lung with pneumonia?  
+Having demonstrated that we are able to use cGAN to differentially generate female and male x-rays on the basis of embedding labels, the question is, can we use cGAN to differentially generate images where the patterns of the disease are evident in x-rays.  Can we use cGAN to see beyond the smoke and identify those aspects of disease which distinguish a healthy lung from a lung with pneumonia?   
 
 <p align="center">
 <img src="/images/Fire.png" width="550" height="270"> 
