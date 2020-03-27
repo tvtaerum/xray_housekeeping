@@ -16,7 +16,7 @@ Having resolved for myself issues related to mode collapse and unscheduled inter
 
 As a reminder of what was previously established, we can see in the x-rays generated below, that the https://github.com/tvtaerum/cGANs_housekeeping program did a good job of creating images that are obviously "attractive males" in contrast to "attractive females with high cheek bones".  
 <p align="center"> 
-<img src="/images/attractivex-rays.png" width="650" height="135">
+<img src="/images/attractivefaces.png" width="650" height="135">
 </p>
 In particular, we are visually aware that cGAN successfully generated images which are clearly "healthy lungs" and "lungs with viral pneumonia or bacterial pneumonia" but can the cGAN generate images which are clearly "healthy lungs", "viral pneumonia" and "bacterial pneumonia". 
 <p align="center">
