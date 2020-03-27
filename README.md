@@ -18,12 +18,12 @@ As a reminder of what was previously established, we can see in the x-rays gener
 <p align="center"> 
 <img src="/images/attractiveFaces.png" width="650" height="135">
 </p>
-In particular, we are visually aware that cGAN successfully generated images which are clearly "attractive females" and "attractive males" but can the cGAN generate images which are clearly "healthy lungs", "viral pneumonia" and "bacterial pneumonia". 
+In particular, we are visually aware that cGAN successfully generated images which are clearly "attractive females" and "attractive males" but can the cGAN generate images which are clearly "healthy lungs", "viral pneumonia" and "bacterial pneumonia"?    
+
 <p align="center">
 <img src="/images/healthy_viral_bacterial_pneumonia.png" width="650" height="135">
-</p>
+</p>    
 In the previous generated x-rays, we can see of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.  
-
 
 ### Citations:
 <dl>
