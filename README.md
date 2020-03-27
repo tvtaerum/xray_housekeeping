@@ -87,14 +87,18 @@ There were three parts to this process:
 
 3. setting up the cGAN so that it will generate and save x-rays based on the features (embeddings/labels) associated with an image.  
 
-![random generated x-rays](images/4X10RandomlyGeneratedx-rays.png)    
+<p align="center">
+<img src="/images/generated_xrays.png" width="500" height="250">
+</p>
 
 There are three kinds of embedding and the identity of the embedding (0 thru 2) is included in the generated x-ray. In many ways, those x-rays identified as being 0 are "healthy lungs".  Those x-rays identified as 1 (viral), are lungs with viral pneumonia.  Those x-rays identifed as 2 are lungs with bacterial pneumonia.  The labels are added when creating the image.  Explanations for what we found is discussed in section 6.  
 
 ### 3.  how can I vectorize from generated x-ray to generated x-ray when using embedding?
 Jeff Brownlee provides a brilliant example of how to vectorize from one x-ray to another x-ray.  In addition to what Brownlee had done, we vectorize two generated x-rays and then, for the same 100-dimensional space, "add" the predictive value of the features through embedding as described in section 5. 
 
-![vectorized range of x-rays](images/4X10VectorizedRangeOfx-rays.png)    
+<p align="center">
+<img src="/images/healthy_viral_bacterial_pneumonia.png" width="650" height="135">
+</p>
 
 Going from left to right, we see the x-ray on the left morphing into the x-ray on the right.  When we compare each row, we see the four features described in section 5.  The only difference between each row are due to the predictive power of the embeddings/labels.  Of particular interest is comparing the second row (embedded value 1: attractive male) with the third row (embedded value 2: attractive female with high cheek bones). Everything except the embedding/label is identical.  
 
