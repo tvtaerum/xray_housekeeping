@@ -87,7 +87,7 @@ There were three parts to this process:
 
 3. setting up the cGAN so that it will generate and save x-rays based on the features (embeddings/labels) associated with an image.  
 
-![random generated x-rays](images/4X10RandomlyGeneratedx-rays.png)    
+![random generated x-rays](images/generated_xrays.png)    
 
 There are three kinds of embedding and the identity of the embedding (0 thru 2) is included in the generated x-ray. In many ways, those x-rays identified as being 0 are "healthy lungs".  Those x-rays identified as 1 (viral), are lungs with viral pneumonia.  Those x-rays identifed as 2 are lungs with bacterial pneumonia.  The labels are added when creating the image.  Explanations for what we found is discussed in section 6.  
 
