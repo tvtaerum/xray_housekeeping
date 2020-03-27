@@ -130,13 +130,25 @@ The following is an outline of the programming steps and Python code used to cre
 
 The recommended folder structure looks as follows:
 <ul>
-    <li>cGANs_housekeeping-master (or any folder name)</li>
+    <li>xray_housekeeping-master (or any folder name)</li>
 	<ul>
        <li> files (also contains Python programs - program run from here)</li>
 	<ul>
-		<li> <b>celeb</b></li>
+		<li> <b>xray</b></li>
 		<ul>
-			<li> <b>img_align_celeba</b> (contains about 202,599 images for data input)</li>
+			<li> <b>chest_xray</b> (contains about 202,599 images for data input)</li>
+			<ul>
+				<b>test</b>
+				<ul>
+					<b>NORMAL</b>
+					<b>PNEUMONIA</b>
+				</ul>
+				<b>train</b>
+				<ul>
+					<b>NORMAL</b>
+					<b>PNEUMONIA</b>
+				</ul>
+			</ul>
 			<li> <b>real_plots</b> (contains arrays of real images for inspection)</li>
 			<li> <b>results</b> (contains generated png images of x-rays and and h5 files for models saved by program)</li>
 		</ul>
