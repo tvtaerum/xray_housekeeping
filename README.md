@@ -12,7 +12,7 @@ I thank Jason Brownlee for his work and tutorials at https://machinelearningmast
  
 
 ### Motivation for housekeeping with xrays of children with pneumonia:
-Having resolved for myself issues related to mode collapse and unscheduled interruptions of long running programs, the next application is building x-rays of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.   
+Having resolved for myself issues related to mode collapse and unscheduled interruptions of long running programs, the next application is building x-rays of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.    
 
 As a reminder of what was previously established, we can see in the x-rays generated below, that the https://github.com/tvtaerum/cGANs_housekeeping program did a good job of creating images that are obviously "attractive males" in contrast to "attractive females with high cheek bones".  
 <p align="center"> 
