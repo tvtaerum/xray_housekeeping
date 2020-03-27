@@ -96,7 +96,9 @@ There are three kinds of embedding and the identity of the embedding (0 thru 2) 
 ### 3.  how can I vectorize from generated x-ray to generated x-ray when using embedding?
 Jeff Brownlee provides a brilliant example of how to vectorize from one x-ray to another x-ray.  In addition to what Brownlee had done, we vectorize two generated x-rays and then, for the same 100-dimensional space, "add" the predictive value of the features through embedding as described in section 5. 
 
-![vectorized range of x-rays](images/4X10VectorizedRangeOfx-rays.png)    
+<p align="center">
+<img src="/images/healthy_viral_bacterial_pneumonia.png" width="500" height="250">
+</p>
 
 Going from left to right, we see the x-ray on the left morphing into the x-ray on the right.  When we compare each row, we see the four features described in section 5.  The only difference between each row are due to the predictive power of the embeddings/labels.  Of particular interest is comparing the second row (embedded value 1: attractive male) with the third row (embedded value 2: attractive female with high cheek bones). Everything except the embedding/label is identical.  
 
