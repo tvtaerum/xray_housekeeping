@@ -23,7 +23,7 @@ In particular, we are visually aware that cGAN successfully generated images whi
 <p align="center">
 <img src="/images/healthy_viral_bacterial_pneumonia.png" width="650" height="135">
 </p>    
-In the previous generated x-rays, we can see of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.  
+In the previous screen shot of generated x-rays, we can see of healthy lungs, lungs with viral pneumonia, and lungs with bacterial pneumonia.  
 
 ### Citations:
 <dl>
@@ -95,7 +95,7 @@ There were three parts to this process:
 There are three kinds of embedding and the identity of the embedding (0 thru 2) is included in the generated x-ray. Those x-rays identified as being 0 are "healthy lungs".  Those x-rays identified as 1 (viral), are lungs with viral pneumonia.  Those x-rays identifed as 2 are lungs with bacterial pneumonia.  The labels are added when creating the image.   
 
 ### 3.  how can I vectorize from generated x-ray to generated x-ray when using embedding?
-Jeff Brownlee provides a brilliant example of how to vectorize from one x-ray to another x-ray.  In addition to what Brownlee had done, we vectorize two generated x-rays and then, for the same 100-dimensional space, "add" the predictive value of the features through embedding. 
+Jeff Brownlee provides a brilliant example of how to vectorize from one face to another face.  In addition to what Brownlee had done, we vectorize two generated x-rays and then, for the same 100-dimensional space, "add" the predictive value of the features through embedding. 
 
 <p align="center">
 <img src="/images/healthy_viral_bacterial_pneumonia.png" width="650" height="135">
@@ -122,7 +122,7 @@ From an analytical perspective, comparing rows may provide insight into what a f
                         results = vstack((results, X))   # stack the images for display
             plot_generated(filename, results, labels_input, 10, n_samples, n_classes)   #generate plot
 ```
-The programming fragment illustrates the effect of embedding, where the generated latent points are identical but the embedded labels are different - resulting in generated images which are marketly different.    
+The programming fragment illustrates how to operationalize embedding, where the generated latent points are identical but the embedded labels are different - resulting in generated images which are marketly different.    
 
 
 ###  4.  cGan streams and data sources:
@@ -138,15 +138,15 @@ The recommended folder structure looks as follows:
 		<ul>
 			<li> <b>chest_xray</b> (contains about 202,599 images for data input)</li>
 			<ul>
-				<b>test</b>
+				<li> <b>test</b></li> 
 				<ul>
-					<b>NORMAL</b>
-					<b>PNEUMONIA</b>
+					<li> <b>NORMAL</b></li> 
+					<li> <b>PNEUMONIA</b></li> 
 				</ul>
-				<b>train</b>
+				<li> <b>train</b></li> 
 				<ul>
-					<b>NORMAL</b>
-					<b>PNEUMONIA</b>
+					<li> <b>NORMAL</b></li> 
+					<li> <b>PNEUMONIA</b></li> 
 				</ul>
 			</ul>
 			<li> <b>real_plots</b> (contains arrays of real images for inspection)</li>
