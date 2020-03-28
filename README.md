@@ -160,7 +160,7 @@ The recommended folder structure looks as follows:
 Those folders which are in <b>BOLD</b> need to be created. 
 All Python programs must be run from within the "file" directory.  
 
-#### a. download x-ray images from https://www.kaggle.com/jessicali9530/celeba-dataset
+#### a. download x-ray images from https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia/data
 #### b. select out subset of images with attractive x-rays and compress <a href="/files/images_convert_mtcnn_attractive_x-rays.py">MTCNN convert attractive x-rays</a>
 
 When executing, you will get the following output:  
