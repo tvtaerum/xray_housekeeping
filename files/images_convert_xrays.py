@@ -9,8 +9,7 @@ import numpy as np
 
 np.set_printoptions(precision=3)
 np.set_printoptions(suppress=True)
-varNames = ["NORMAL","BACTERIA","VIRUS"]
-varNames = ["NORMAL","PNEUMONIA"]
+varNames = ["NORMAL","VIRAL","BACTERIAL"]
 
 # load an image as an rgb numpy array
 def load_image(filename):
