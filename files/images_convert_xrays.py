@@ -11,7 +11,6 @@ np.set_printoptions(precision=3)
 np.set_printoptions(suppress=True)
 varNames = ["NORMAL","BACTERIA","VIRUS"]
 varNames = ["NORMAL","PNEUMONIA"]
-# data_attractive = pd.read_csv('xray/list_attr_xraya.csv', nrows=None)['Attractive'].to_numpy()
 
 # load an image as an rgb numpy array
 def load_image(filename):
