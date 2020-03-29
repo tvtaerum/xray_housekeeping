@@ -106,21 +106,26 @@ Going from left to right, we see the x-ray on the left morphing into the x-ray o
 From an analytical perspective, comparing rows may provide insight into what a feature actually means.   
 
 ```Python
-            n_classes = 4     
-            latent_dim = 100                  # 100 dimensional space
+            n_samples = 3
+            n_classes = 3
+            cumProbs = [0.,         0.2696918,  0.52534249, 1.00000003]
+            latent_dim = 100
             pts, labels_input = generate_latent_points(latent_dim, n_samples, cumProbs)
+            # interpolate pairs
             results = None
-            for i in range(n_samples):        # interpolate points in latent space
+            for i in range(n_samples):            # interpolate points in latent space
                 interpolated = interpolate_points(pts[2*i], pts[2*i+1])
-                for j in range(n_classes):    # run each class (embedding label)
+                for j in range(n_classes):
                     labels = np.ones(10,dtype=int)*j
-                    X = model.predict([interpolated, labels])  # predict image based on latent points & label
-                    X = (X + 1) / 2.0         # scale from [-1,1] to [0,1]
+                    X = model.predict([interpolated, labels])
+                    # scale from [-1,1] to [0,1]
+                    X = (X + 1) / 2.0
                     if results is None:
                         results = X
                     else:
-                        results = vstack((results, X))   # stack the images for display
-            plot_generated(filename, results, labels_input, 10, n_samples, n_classes)   #generate plot
+                        results = vstack((results, X))
+            # plot the result
+            plot_generated(filename, results, labels_input, 10, n_samples, n_classes)
 ```
 The programming fragment illustrates how to operationalize embedding, where the generated latent points are identical but the embedded labels are different - resulting in generated images which are marketly different.    
 
@@ -165,7 +170,7 @@ All Python programs must be run from within the "file" directory.
 
 When executing, you will get the following output:  
 <p align="left">
-<img src="/images/LoadingAndCompressing50000Images.png" width="200" height="100">
+<img src="/images/LoadingAndCompressingImages.png" width="200" height="100">
 </p>  
 
 It will create two files:
@@ -180,12 +185,11 @@ Refer back to Python coding fragments for explanation on restarting program.
 
 The list of images for visual examination depends on the lstEpochs variable included in the code fragment below.  In the example below, epochs 5, 15, 25... 145, 150 are displayed.  If you have fewer than 150 epochs saved then you'll need to adjust the lstEpochs list.    
 ```Python
-directory = 'celeb/results/'
-iFile = 0
+directory = 'xray/results/'
+lstEpochs = [5,25,45,65,85,105,125,145,165,185,205,225,245,265,285,305,325,345,365,385,405]
 for idx, filename in enumerate(listdir(directory)):
     if ".h5" in filename and not("_gan" in filename) and not("_dis" in filename):
-        iFile += 1
-        lstEpochs = [5,15,25,35,45,55,65,75,85,95,105,115,125,135,145,150]
+        iFile = int(re.findall(r'\d+',filename)[0])
         if iFile in lstEpochs: 
             model = load_model(directory + filename)
             gen_weights = array(model.get_weights())
